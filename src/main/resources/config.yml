@@ -1,0 +1,49 @@
+#是否启用点券-需要PlayerPoint支持
+UsePoint: true
+WatchDog: 15
+Mails:
+  AutoLook: "&9[&4必读&9]"
+  #等待多少秒后弹出界面，建议不要少于10秒
+  Wait: 15
+Gui:
+  Menu:
+    Title: "&l&bEMail邮箱系统"
+    Text: "&8选择你要进行的操作："
+    Mail:
+      Text: "&l打开邮箱"
+      Image: "textures/items/book_portfolio"
+    SendMail:
+      Text: "&l发送邮件"
+      Image: "textures/items/paper"
+  GlobalMail:
+    Title: "&lEMail邮箱菜单"
+    Text: ""
+    Personal:
+      Text: "&l查看个人邮箱"
+      Image: "textures/items/book_writable"
+    Global:
+      Text: "&l查看系统邮箱"
+      Image: "textures/items/book_writable"
+    Mails:
+      Title: "§lEMail全局邮件系统"
+      Image: "textures/items/book_writable"
+  Mail:
+    Title: "&lEMail个人邮件系统"
+    Text: "&8请选择要查看的邮件:"
+    Image: "textures/items/book_writable"
+    Send:
+      Title: "&5发送邮件"
+      Input: "&d请输入您的寄语:"
+      SendItem: "&6发送手上物品"
+      Count: "&b确认数量"
+      Receiver: "&9发送给:"
+    Info:
+      Title: "&6内容"
+      Desc:
+        - "§a发件人: §e<sender>"
+        - "§a发件日期: §e<date>"
+        - "§a寄语:"
+        - "<msg>"
+      Button:
+        Text: "&l完成阅读"
+        Image: "textures/items/nether_star"

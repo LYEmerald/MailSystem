@@ -1,0 +1,11 @@
+Title: "&e&lEMail &9>> "
+Error:
+  MailNotExists: "&b邮件不存在..."
+  PlayerNotExists: "&4玩家不存在..."
+  ItemNotEnough: "&4物品不足..."
+Notice:
+  Mail:
+    Get: "&6领取完成！"
+    Back: "&4物品到期，已经强制下架，请查收!"
+    Send: "&6发送成功！"
+    Has: "&b您的邮箱中有<count>封未读邮件，请注意查收！"

@@ -1,0 +1,28 @@
+name: MailSystem
+main: net.IchigyouRuri.Mail.Main
+version: "1.0.0"
+author: EmeraldGames Team
+api: ["1.0.0"]
+description: MailSystem For Nukkit!
+depend:
+  - EconomyAPI
+
+commands:
+  mail:
+    aliases: []
+    permission: mail.command.mail
+    description: EMail邮箱系统命令
+    usage: "/mail"
+  maila:
+    aliases: [ ]
+    permission: maila.command.maila
+    description: EMail邮箱管理命令
+    usage: "/maila"
+
+permissions:
+  mail.command.mail:
+    default: true
+    description: EMail邮箱系统命令
+  maila:command:maila:
+    default: op
+    description: EMail邮箱管理命令
