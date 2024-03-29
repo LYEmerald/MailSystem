@@ -25,7 +25,7 @@ public class LoadCfg {
     public static String globalMailTitle="",globalMailText="",globalMailBtPersonalText="",globalMailBtGlobalText="",globalMailListMenuTitle="";
     public static String auctionTitle="",auctionText="",auctionBtShop="",auctionBtAuction="",auctionShopTitle="",auctionGoodsTitle="",auctionInfoTitle="",auctionAddPriceTitle="";
     public static float chargeSellMoney=0f,chargeSellPoint=0f,chargeBuyMoney=0f,chargeBuyPoint=0f,aBankMoney=0f,aBankPoint=0f;
-    public static int keepDay=7,maxSell=3,mailAutoLookTick=15000,watchDog=15*1000*60,auctionKeepDay=1,auctionMax=3;
+    public static int keepDay=7,maxSell=3,mailAutoLookTick=15,watchDog=15*1000*60,auctionKeepDay=1,auctionMax=3;
     public static void loadCfg(){
         if(!new File(Main.getPlugin().getDataFolder(), "config.yml").exists()) {
             Main.getPlugin().getLogger().info(TextFormat.BLUE+"未找到config.yml，正在创建...");
@@ -52,7 +52,7 @@ public class LoadCfg {
         auctionMax=cfg.getInt("Auction.Max");
 
         mailsAutoLook=cfg.getString("Mails.AutoLook").replaceAll("&","§");
-        mailAutoLookTick=cfg.getInt("Mail.Wait")*1000;
+        mailAutoLookTick=cfg.getInt("Mail.Wait")*20;
 
         menuTitle=cfg.getString("Gui.Menu.Title").replaceAll("&","§");
         menuText=cfg.getString("Gui.Menu.Text").replaceAll("&","§");
